@@ -54,7 +54,7 @@
   clip-path: polygon(0% 0%, 75% 0%, 100% 68%, 85% 100%, 0% 100%);
   margin-top: auto;
   margin-bottom: 37px;
-  max-width: 233px;
+  width: 50%;
   z-index: 1;
 
   &__discount {
@@ -102,7 +102,7 @@
 
 .products-box {
   margin-left: auto;
-  max-width: 285px;
+  max-width: 60%;
   z-index: 1;
 
   &__banner {
@@ -113,12 +113,12 @@
 
 .gift {
   background-color: #358AEF;
-  padding: 17px 15px;
+  padding: 17px 0px 15px 15px;
   margin-bottom: 55px;
 
   &__text {
-    max-width: 350px;
-    margin: 0 3% 0 auto;
+    padding-left: 70px;
+    padding-right: 15px;
     font: italic 900 20px/24px var(--font);
     color: $white;
   }
@@ -129,5 +129,23 @@
     transform: translateY(-50%);
     width: 58px;
     z-index: 2;
+  }
+}
+@media (max-width:450px) {
+  .price__discount{
+    padding-left: 5px;
+  }
+  .price__box{
+    padding-left: 5px;
+  }
+}
+@media (max-width:360px) {
+  .hero-top__subtitle{
+    font: 700 23px/26px var(--font);
+  }
+}
+@media (max-width:320px) {
+  .price-new{
+    font: 900 65px/76px var(--font);
   }
 }

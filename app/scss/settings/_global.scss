@@ -160,6 +160,7 @@ body {
 		max-width: 310px;
 		color: $white;
 		font: italic 900 30px/35px var(--font);
+		display: block;
 	}
 
 	&--separ {
@@ -199,9 +200,5 @@ body {
 @media (max-width:320px) {
 	.title--accent {
 		font: 900 30px/35px var(--font);
-	}
-
-	.link__text {
-		padding: 0 35px 0 35px;
 	}
 }
