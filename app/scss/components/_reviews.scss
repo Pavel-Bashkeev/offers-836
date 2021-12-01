@@ -1,0 +1,21 @@
+.reviews{
+  padding: 60px 0;
+  background-color: #fff;
+  &__title{
+    margin-bottom: 30px;
+    max-width: 360px;
+    font:900 30px/35px var(--font);
+    color: #003F8A;
+  }
+}
+@media (max-width:420px) {
+  .reviews__container{
+    padding: 0;
+  }
+}
+@media (max-width:320px) {
+  .reviews__title{
+    font-size: 30px;
+    line-height: 32px;
+  }
+}

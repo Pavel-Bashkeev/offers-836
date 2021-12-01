@@ -1,0 +1,30 @@
+.effects{
+  &-items{
+    margin-bottom: 35px;
+  }
+  &-item{
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+    &__container{
+      margin-bottom: 20px;
+    }
+    &__title{
+      margin-bottom: 20px;
+      align-items: flex-end;
+      &-text{
+        font:900 20px/34px var(--font);
+        text-transform: uppercase;
+        color:#003F8A;
+      }
+      &::before{
+        content: '';
+        width: 30px;
+        height: 52px;
+        background-image: url('../images/dest/icons/star.svg');
+        @extend %bg-cover;
+        margin-right: 10px;
+      }
+    }
+  }
+}

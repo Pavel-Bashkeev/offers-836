@@ -1,0 +1,37 @@
+.order {
+  padding: 60px 0 0;
+  background-image: url('../images/dest/order-bg.png');
+  @extend %bg-cover;
+  &__title {
+    font: 900 40px/46px var(--font);
+    color: $white;
+  }
+
+  &-items {
+    counter-reset: item;
+    padding: 0 25px 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &__icon{
+      width: 90px;
+      height: 90px;
+      margin-right: 16px;
+    }
+    &__text {
+      font: 400 18px/20px var(--font);
+      color: $black;
+      max-width: 277px;
+      color: $white;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

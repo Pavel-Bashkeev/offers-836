@@ -1,0 +1,133 @@
+.hero {
+  &-title {
+    background-image: url('../images/dest/hero/title-bg.png');
+    @extend %bg-cover;
+    background-size: 100% 100%;
+  }
+
+  &-top {
+    align-items: flex-start;
+    margin-bottom: 68px;
+
+    &__subtitle {
+      background: linear-gradient(89.8deg, #FF1214 17.1%, #FF6D6F 57.19%, #D50002 99.86%);
+      color: $white;
+      padding: 10px 12px 10px 75px;
+      font: 700 25px/29px var(--font);
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
+      max-width: 380px;
+      margin-left: auto;
+    }
+
+    &__info {
+      margin-top: auto;
+      align-items: flex-start;
+      margin-bottom: -17%;
+    }
+  }
+  &-bottom{
+    background-image: url('../images/dest/hero/hero-decor.png');
+    @extend %bg-cover;
+    background-size: 100% 100%;
+    padding-bottom: 60px;
+  }
+  &__link {
+    margin-bottom: 41px;
+  }
+
+  &-items {
+    gap: 30px 37px;
+  }
+  &-item{
+    width: 200px;
+    &__icon{
+      margin-bottom: 20px;
+    }
+    &__text{
+      font:400 18px/21px var(--font);
+      color: $white;
+    }
+  }
+}
+
+.price {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 68%, 85% 100%, 0% 100%);
+  margin-top: auto;
+  margin-bottom: 37px;
+  max-width: 233px;
+  z-index: 1;
+
+  &__discount {
+    background-color: #FF1214;
+    padding: 8px 20px 6px 33px;
+    font: 700 20px/25px var(--font);
+    color: $white;
+  }
+
+  &__box {
+    background-color: #FFE600;
+    padding: 0 33px;
+  }
+
+  &-old {
+    font: 400 38px/45px var(--font);
+    color: $black;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+      background-image: url('../images/dest/icons/cross.svg');
+      @extend %bg-cover;
+      width: 56px;
+      height: 44px;
+    }
+
+    &__val {
+      font: 400 28px/36px var(--font);
+    }
+  }
+
+  &-new {
+    font: 900 85px/90px var(--font);
+    color: $black;
+
+    &__val {
+      font: 900 64px/81px var(--font);
+    }
+  }
+}
+
+.products-box {
+  margin-left: auto;
+  max-width: 285px;
+  z-index: 1;
+
+  &__banner {
+    top: -35px;
+    right: 12px;
+  }
+}
+
+.gift {
+  background-color: #358AEF;
+  padding: 17px 15px;
+  margin-bottom: 55px;
+
+  &__text {
+    max-width: 350px;
+    margin: 0 3% 0 auto;
+    font: italic 900 20px/24px var(--font);
+    color: $white;
+  }
+
+  &__img {
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 58px;
+    z-index: 2;
+  }
+}

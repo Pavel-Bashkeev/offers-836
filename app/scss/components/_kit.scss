@@ -1,0 +1,53 @@
+.kit{
+  background-image: url('../images/dest/kit-bg.png');
+  @extend %bg-cover;
+  &__title{
+    color: $white;
+  }
+  &__gif{
+    margin-bottom: 30px;
+  }
+  &__info{
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  &__text{
+    color: $white;
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+  
+  &-product{
+    margin: auto 20px -50px auto;
+  }
+}
+.benefits{
+  &__title{
+    color: $white;
+  }
+  &__present{
+    margin-bottom: 65px;
+  }
+  &-list{
+    padding: 0 15px;
+    margin-bottom: 35px;
+    &__item{
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      &::before{
+        content: '';
+        width: 26px;
+        height: 20px;
+        margin-right: 12px;
+        background-image: url('../images/dest/icons/check.svg');
+        @extend %bg-cover;
+        flex-shrink: 0;
+      }
+    }
+    &__text{
+      color: $white;
+    }
+  }
+}
